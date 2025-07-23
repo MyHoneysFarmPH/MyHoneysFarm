@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styley.css"> 
+        <title>My Honey's Farm</title>
+</head>
+<body>
+  <div id="rotate-warning">
+  Please rotate your device to landscape for the best experience.
+</div>
+
+<script>
+  function checkOrientation() {
+    const warning = document.getElementById("rotate-warning");
+    const content = document.querySelector(".container");
+    if (window.innerHeight > window.innerWidth) {
+      warning.style.display = "block";
+      if (content) content.style.display = "none";
+    } else {
+      warning.style.display = "none";
+      if (content) content.style.display = "block";
+    }
+  }
+
+  window.addEventListener("load", checkOrientation);
+  window.addEventListener("resize", checkOrientation);
+</script>
+<div class="container">
+  <img src="page12.png" alt="Background" class="background-img">
+
+<a href="page10.html">
+    <img src="rightdown_arrow1.png" alt="rightdown_arrow" class="rightdown5-button">
+  </a>
+
+<a href="page13.html">
+    <img src="leftup3.png" alt="leftup_arrow" class="leftup3-button">
+  </a>
+
+</div>
+
+</body>
+</html>

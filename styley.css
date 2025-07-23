@@ -1,0 +1,578 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Background Image */
+.background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+/* Image Start Button */
+.start-button {
+  position: absolute;
+  top: 72%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black; /* 👈 This sets the background to black */
+}
+
+.leftdown5-button {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 170px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.leftdown5-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.rightdown2-button {
+  position: absolute;
+  top: 95%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 170px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.rightdown2-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.leftdown6-button {
+  position: absolute;
+  top: 94%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 150px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.leftdown6-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.up2-button {
+  position: absolute;
+  top: 68%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 150px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.up2-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+.leftup3-button {
+  position: absolute;
+  top: 77%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 150px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.leftup3-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+.leftup4-button {
+  position: absolute;
+  top: 76%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 200px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.leftup4-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.rightdown3-button {
+  position: absolute;
+  top: 95%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 170px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.rightdown3-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.right3-button {
+  position: absolute;
+  top: 70%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 140px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.right3-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.rightdown4-button {
+  position: absolute;
+  top: 90%;
+  left: 66%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 210px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.rightdown4-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.rightdown5-button {
+  position: absolute;
+  top: 90%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 210px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.rightdown5-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.rightup3-button {
+  position: absolute;
+  top: 55%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 150px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.rightup3-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.leftup3-button {
+  position: absolute;
+  top: 68%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 190px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.leftup3-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.down2-button {
+  position: absolute;
+  top: 92%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 190px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.down2-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.right3-button {
+  position: absolute;
+  top: 90%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 150px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.right3-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.leftdown7-button {
+  position: absolute;
+  top: 94%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 150px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.leftdown7-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.rightup4-button {
+  position: absolute;
+  top: 74%;
+  left: 69%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 150px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.rightup4-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.leftup4-button {
+  position: absolute;
+  top: 69%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 190px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.leftup4-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.rightup5-button {
+  position: absolute;
+  top: 62%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 160px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.rightup5-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.up4-button {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 150px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.up4-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.down3-button {
+  position: absolute;
+  top: 88%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 210px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.down3-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.rightup6-button {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 200px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.rightup6-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.down4-button {
+  position: absolute;
+  top: 90%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 220px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.down4-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.rightdown6-button {
+  position: absolute;
+  top: 90%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 210px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.rightdown6-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.leftup5-button {
+  position: absolute;
+  top: 73%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 190px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.leftup5-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.right4-button {
+  position: absolute;
+  top: 67%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 140px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.right4-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.leftup5-button {
+  position: absolute;
+  top: 78%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 190px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.leftup5-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.up5-button {
+  position: absolute;
+  top: 80%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 130px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.up5-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.left7-button {
+  position: absolute;
+  top: 77%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 150px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.left7-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.right6-button {
+  position: absolute;
+  top: 77%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 130px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.right6-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.down5-button {
+  position: absolute;
+  top: 90%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 220px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.down5-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.rightup7-button {
+  position: absolute;
+  top: 50%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 160px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.rightup7-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+    
+  }
+
+#rotate-warning {
+  display: none;
+  background: black;
+  color: white;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  padding-top: 40vh;
+  font-size: 1.5rem;
+}
+
+@media screen and (orientation: portrait) {
+  .container {
+    display: none;
+  }
+
+  #rotate-warning {
+    display: block;
+  }
+}

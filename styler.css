@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Background Image */
+.background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+/* Image Start Button */
+.start-button {
+  position: absolute;
+  top: 72%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.start-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black; /* 👈 This sets the background to black */
+}
+
+.right-button {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 180px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.right-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.up-button {
+  position: absolute;
+  top: 85%;
+  left: 49.2%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 200px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.up-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.leftdown-button {
+  position: absolute;
+  top: 82%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 200px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.leftdown-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.down-button {
+  position: absolute;
+  top: 90%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 220px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.down-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.left-button {
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 190px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.left-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.right2-button {
+  position: absolute;
+  top: 67%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 160px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.right2-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.leftdown2-button {
+  position: absolute;
+  top: 90%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 180px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.leftdown2-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.rightup-button {
+  position: absolute;
+  top: 83%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 180px;  /* adjust size as needed */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.rightup-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
+
+  #rotate-warning {
+  display: none;
+  background: black;
+  color: white;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  padding-top: 40vh;
+  font-size: 1.5rem;
+}
+
+@media screen and (orientation: portrait) {
+  .container {
+    display: none;
+  }
+
+  #rotate-warning {
+    display: block;
+  }
+}
+
+
