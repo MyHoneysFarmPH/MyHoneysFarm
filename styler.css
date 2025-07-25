@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Background Image */
+.background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+/* Shared Button Styles */
+.start-button,
+.right-button,
+.up-button,
+.leftdown-button,
+.down-button,
+.left-button,
+.right2-button,
+.leftdown2-button,
+.rightup-button {
+  position: absolute;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  z-index: 2;
+}
+
+/* Hover effect */
+.start-button:hover,
+.right-button:hover,
+.up-button:hover,
+.leftdown-button:hover,
+.down-button:hover,
+.left-button:hover,
+.right2-button:hover,
+.leftdown2-button:hover,
+.rightup-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Individual Button Positions + Responsive Widths */
+.start-button {
+  top: 72%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  width: 20vw;
+  max-width: 300px;
+}
+
+.right-button {
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 12vw;
+  max-width: 180px;
+}
+
+.up-button {
+  top: 85%;
+  left: 49.2%;
+  transform: translate(-50%, -50%);
+  width: 13vw;
+  max-width: 200px;
+}
+
+.leftdown-button {
+  top: 82%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 13vw;
+  max-width: 200px;
+}
+
+.down-button {
+  top: 90%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 14vw;
+  max-width: 220px;
+}
+
+.left-button {
+  top: 70%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 12vw;
+  max-width: 190px;
+}
+
+.right2-button {
+  top: 67%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 11vw;
+  max-width: 160px;
+}
+
+.leftdown2-button {
+  top: 90%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 12vw;
+  max-width: 180px;
+}
+
+.rightup-button {
+  top: 83%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 12vw;
+  max-width: 180px;
+}
+
+/* Force landscape view on small screens */
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
+/* Rotate warning */
+#rotate-warning {
+  display: none;
+  background: black;
+  color: white;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  padding-top: 40vh;
+  font-size: 1.5rem;
+}
+
+@media screen and (orientation: portrait) {
+  .container {
+    display: none;
+  }
+
+  #rotate-warning {
+    display: block;
+  }
+}
+
+/* 📱 Make buttons even smaller on small devices */
+@media screen and (max-width: 480px) {
+  .start-button,
+  .right-button,
+  .up-button,
+  .leftdown-button,
+  .down-button,
+  .left-button,
+  .right2-button,
+  .leftdown2-button,
+  .rightup-button {
+    width: 22vw;
+    max-width: 120px;
+  }
+}

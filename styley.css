@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Background Image */
+.background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+/* Common button styles */
+[class$='-button'] {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  max-width: 250px;
+}
+
+/* Individual buttons with responsive widths */
+.start-button { top: 72%; left: 44%; width: max(15vw, 120px); }
+
+.leftdown5-button { top: 90%; left: 50%; width: max(12vw, 100px); }
+.rightdown2-button { top: 95%; left: 60%; width: max(12vw, 100px); }
+.leftdown6-button { top: 94%; left: 20%; width: max(10vw, 90px); }
+.up2-button { top: 68%; left: 55%; width: max(10vw, 90px); }
+.leftup3-button { top: 68%; left: 42%; width: max(13vw, 110px); }
+.leftup4-button { top: 69%; left: 45%; width: max(13vw, 110px); }
+.rightdown3-button { top: 95%; left: 30%; width: max(12vw, 100px); }
+.right3-button { top: 90%; left: 80%; width: max(10vw, 90px); }
+.rightdown4-button { top: 90%; left: 66%; width: max(14vw, 120px); }
+.rightdown5-button { top: 90%; left: 55%; width: max(14vw, 120px); }
+.rightup3-button { top: 55%; left: 30%; width: max(10vw, 90px); }
+.down2-button { top: 92%; left: 52%; width: max(12vw, 100px); }
+.leftdown7-button { top: 94%; left: 50%; width: max(10vw, 90px); }
+.rightup4-button { top: 74%; left: 69%; width: max(10vw, 90px); }
+.rightup5-button { top: 62%; left: 57%; width: max(11vw, 100px); }
+.up4-button { top: 60%; left: 45%; width: max(10vw, 90px); }
+.down3-button { top: 88%; left: 45%; width: max(14vw, 120px); }
+.rightup6-button { top: 80%; left: 80%; width: max(14vw, 120px); }
+.down4-button { top: 90%; left: 52%; width: max(15vw, 130px); }
+.rightdown6-button { top: 90%; left: 85%; width: max(14vw, 120px); }
+.leftup5-button { top: 78%; left: 14%; width: max(13vw, 110px); }
+.right4-button { top: 67%; left: 65%; width: max(9vw, 80px); }
+.up5-button { top: 80%; left: 52%; width: max(9vw, 80px); }
+.left7-button { top: 77%; left: 25%; width: max(10vw, 90px); }
+.right6-button { top: 77%; left: 75%; width: max(9vw, 80px); }
+.down5-button { top: 90%; left: 49%; width: max(15vw, 130px); }
+.rightup7-button { top: 50%; left: 57%; width: max(11vw, 100px); }
+.down8-button { top: 90%; left: 49%; width: max(15vw, 130px); }
+.down9-button { top: 90%; left: 49%; width: max(15vw, 130px); }
+.rightup8-button { top: 80%; left: 80%; width: max(15vw, 130px); }
+.down10-button { top: 90%; left: 67%; width: max(15vw, 130px); }
+.leftdown8-button { top: 50%; left: 55%; width: max(11vw, 100px); }
+.down11-button { top: 90%; left: 30%; width: max(15vw, 130px); }
+/* Hover effect */
+[class$='-button']:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Rotation for landscape on mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
+/* Rotation warning */
+#rotate-warning {
+  display: none;
+  background: black;
+  color: white;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  padding-top: 40vh;
+  font-size: 1.5rem;
+}
+
+@media screen and (orientation: portrait) {
+  .container {
+    display: none;
+  }
+
+  #rotate-warning {
+    display: block;
+  }
+}

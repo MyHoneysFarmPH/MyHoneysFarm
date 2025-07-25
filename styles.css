@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Background Image */
+.background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+/* Shared Button Base */
+.start-button,
+.rightdown-button,
+.leftdown3-button,
+.leftup2-button,
+.leftdown4-button {
+  position: absolute;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  z-index: 2;
+}
+
+/* Hover effect */
+.start-button:hover,
+.rightdown-button:hover,
+.leftdown3-button:hover,
+.leftup2-button:hover,
+.leftdown4-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Individual Positions & Responsive Widths */
+.start-button {
+  top: 72%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  width: 20vw;
+  max-width: 300px;
+}
+
+.rightdown-button {
+  top: 80%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 14vw;
+  max-width: 200px;
+}
+
+.leftdown3-button {
+  top: 74%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  width: 14vw;
+  max-width: 200px;
+}
+
+.leftup2-button {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14vw;
+  max-width: 200px;
+}
+
+.leftdown4-button {
+  top: 74%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  width: 12vw;
+  max-width: 170px;
+}
+
+/* Rotate screen to landscape on small devices */
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
+/* Rotate warning */
+#rotate-warning {
+  display: none;
+  background: black;
+  color: white;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  padding-top: 40vh;
+  font-size: 1.5rem;
+}
+
+/* Portrait warning behavior */
+@media screen and (orientation: portrait) {
+  .container {
+    display: none;
+  }
+
+  #rotate-warning {
+    display: block;
+  }
+}
+
+/* 📱 Smaller size on mobile */
+@media screen and (max-width: 480px) {
+  .start-button,
+  .rightdown-button,
+  .leftdown3-button,
+  .leftup2-button,
+  .leftdown4-button {
+    width: 22vw;
+    max-width: 120px;
+  }
+}
