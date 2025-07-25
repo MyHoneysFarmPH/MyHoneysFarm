@@ -8,8 +8,10 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background-color: black;
 }
 
+/* Container */
 .container {
   width: 100%;
   height: 100%;
@@ -25,171 +27,124 @@ html, body {
   z-index: 1;
 }
 
-/* Image Start Button */
-.start-button {
-  position: absolute;
-  top: 72%;
-  left: 44%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 300px;  /* adjust size as needed */
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.start-button:hover {
-  transform: translate(-50%, -50%) scale(1.05);
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: black; /* 👈 This sets the background to black */
-}
-
-.right-button {
-  position: absolute;
-  top: 50%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 180px;  /* adjust size as needed */
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.right-button:hover {
-  transform: translate(-50%, -50%) scale(1.05);
-}
-
-.up-button {
-  position: absolute;
-  top: 85%;
-  left: 49.2%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 200px;  /* adjust size as needed */
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.up-button:hover {
-  transform: translate(-50%, -50%) scale(1.05);
-}
-
-.leftdown-button {
-  position: absolute;
-  top: 82%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 200px;  /* adjust size as needed */
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.leftdown-button:hover {
-  transform: translate(-50%, -50%) scale(1.05);
-}
-
-.down-button {
-  position: absolute;
-  top: 90%;
-  left: 49%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 220px;  /* adjust size as needed */
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.down-button:hover {
-  transform: translate(-50%, -50%) scale(1.05);
-}
-
-.left-button {
-  position: absolute;
-  top: 70%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 190px;  /* adjust size as needed */
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.left-button:hover {
-  transform: translate(-50%, -50%) scale(1.05);
-}
-
-.right2-button {
-  position: absolute;
-  top: 67%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 160px;  /* adjust size as needed */
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.right2-button:hover {
-  transform: translate(-50%, -50%) scale(1.05);
-}
-
-.leftdown2-button {
-  position: absolute;
-  top: 90%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 180px;  /* adjust size as needed */
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.leftdown2-button:hover {
-  transform: translate(-50%, -50%) scale(1.05);
-}
-
+/* Shared Button Styles */
+.start-button,
+.right-button,
+.up-button,
+.leftdown-button,
+.down-button,
+.left-button,
+.right2-button,
+.leftdown2-button,
 .rightup-button {
   position: absolute;
-  top: 83%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 180px;  /* adjust size as needed */
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease;
+  z-index: 2;
 }
 
+/* Hover effect */
+.start-button:hover,
+.right-button:hover,
+.up-button:hover,
+.leftdown-button:hover,
+.down-button:hover,
+.left-button:hover,
+.right2-button:hover,
+.leftdown2-button:hover,
 .rightup-button:hover {
   transform: translate(-50%, -50%) scale(1.05);
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-    html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-    }
-  }
+/* Individual Button Positions + Responsive Widths */
+.start-button {
+  top: 72%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  width: 20vw;
+  max-width: 300px;
+}
 
-  #rotate-warning {
+.right-button {
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 12vw;
+  max-width: 180px;
+}
+
+.up-button {
+  top: 85%;
+  left: 49.2%;
+  transform: translate(-50%, -50%);
+  width: 13vw;
+  max-width: 200px;
+}
+
+.leftdown-button {
+  top: 82%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 13vw;
+  max-width: 200px;
+}
+
+.down-button {
+  top: 90%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 14vw;
+  max-width: 220px;
+}
+
+.left-button {
+  top: 70%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 12vw;
+  max-width: 190px;
+}
+
+.right2-button {
+  top: 67%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 11vw;
+  max-width: 160px;
+}
+
+.leftdown2-button {
+  top: 90%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 12vw;
+  max-width: 180px;
+}
+
+.rightup-button {
+  top: 83%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 12vw;
+  max-width: 180px;
+}
+
+/* Force landscape view on small screens */
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
+/* Rotate warning */
+#rotate-warning {
   display: none;
   background: black;
   color: white;
@@ -214,4 +169,18 @@ html, body {
   }
 }
 
-
+/* 📱 Make buttons even smaller on small devices */
+@media screen and (max-width: 480px) {
+  .start-button,
+  .right-button,
+  .up-button,
+  .leftdown-button,
+  .down-button,
+  .left-button,
+  .right2-button,
+  .leftdown2-button,
+  .rightup-button {
+    width: 22vw;
+    max-width: 120px;
+  }
+}
